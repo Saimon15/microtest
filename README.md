@@ -10,4 +10,4 @@ the project runs on port 4200, so make sure that port is unoccupied
 To dockerise the project, from the project directory run 'docker-compose build'
 once done, run 'docker-compose up' to start the container
 
-Once the project is up and running, you can test all 3 endpoints described in teh spec sheet
+Once the project is up and running, you can test all 3 endpoints described in the spec sheet
