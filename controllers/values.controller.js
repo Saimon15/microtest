@@ -12,6 +12,9 @@ exports.getValues=function(req,res){
 	*/
 	if(!Object.keys(req.query).length==0)
 	{
+		if(!req.query.keys)
+			return res.status(500).send("Unexpected query");
+
 		var keys=req.query.keys.replace(/,/g, " ");
 		
 		Value.find({}).select(keys+" -_id").then(function(values){
