@@ -4,7 +4,9 @@ services:
     build: .
     ports:
      - "4200:4200"
-    depends_on:
-     - mydb
-  mydb:
-    build: ./db-service
+    links:
+     - mong
+  mong:
+    image: mongo
+    ports:
+     - "27017:27017"
