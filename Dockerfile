@@ -9,7 +9,7 @@ RUN cd /app; \
 	npm install --production
 
 #Expose server port
-EXPOSE 3000
+EXPOSE 4200
 
 #Run app
 CMD ["node","/app/bin/www"]
